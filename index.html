@@ -377,11 +377,15 @@
 			.grid {
 				grid-template-columns: 1fr;
 			}
+			.grid div {
+				aspect-ratio: unset;
+			}
 			body {
 				font-size: 24px;
 			}
 			.cell-txt h2 {
 				font-size: 48px;
+				margin-bottom: 20px;
 			}
 			.grid-flip {
 				order: -1;
@@ -395,9 +399,14 @@
 			}
 			.img-mobile {
 				display: block;
+				position: static;
+				width: 100%;
 			}
 		}
 		@media only screen and (max-width: 600px) {
+			.slogan {
+				font-size: 42px;
+			}
 			.grid {
 				grid-template-columns: 1fr;
 			}
@@ -457,7 +466,7 @@
 	</div>
 	<section id="maps" class="grid-container" style="background: var(--green-dark);">
 		<div class="grid">
-			<div><img src="assets/imgs/tortoise.jpg" class="img-left"></div>
+			<div><img src="assets/imgs/tortoise.jpg" class="img-left img-desktop"><img src="assets/imgs/tortoise.jpg" class="img-left img-mobile"></div>
 			<div class="cell-txt" style="background: var(--green-light);">
 				<h2 style="color:var(--white);" data-inviewport="txt-in-right">
 					Three ocean currents make the Galápagos one of the richest marine ecosystems in the world.
